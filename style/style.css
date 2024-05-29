@@ -1,7 +1,5 @@
-ul{
-    list-style-type: none;
-}
-
-.mainbox{
-    background-color: #2F303A;;
+:root {
+    --title-color: #212121;
+    --text-color: #757575;
+    --active-color: #2196F3;
 }
