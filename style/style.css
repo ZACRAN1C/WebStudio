@@ -3,3 +3,64 @@
     --text-color: #757575;
     --active-color: #2196F3;
 }
+
+nav{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.logo{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+
+.header-email{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.mainbox > h1{
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+}
+
+.mainbox-bt{
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+}
+
+h2 + p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.sect-2  h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+.activity-title{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+.main-team{
+    font-family: "Roboto", sans-serif;
+}
+
+.main-team h3{
+    font-weight: 500;
+}
+
+.main-team p{
+    font-weight: 400;
+}
+
+.main-team > h2{
+    font-weight: 700;
+}
+
+address{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
