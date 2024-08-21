@@ -14,7 +14,7 @@ body{
 }
 
 .container{
-    width: 1200px;
+    max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
     outline: solid red;
@@ -131,6 +131,10 @@ padding: 10px 32px;
     gap: 30px;
 }
 
+.advantages-point{
+    flex-basis: calc((100% - 90px) / 4);
+}
+
 .advantages-title{
     color: var(--title-color);
     letter-spacing: 0.42px;
@@ -163,6 +167,10 @@ margin-bottom: 50px;
     gap: 30px;
 }
 
+.activity-point{
+    flex-basis: calc((100% - 60px) / 3);
+}
+
 .team{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -186,6 +194,12 @@ margin-bottom: 50px;
 border-radius: 0px 0px 4px 4px;
 background-color: #FFF;
 padding-bottom: 30px;
+flex-basis: calc((100% - 90px) / 4);
+}
+
+.team-img{
+    max-width: 270px;
+    max-height: 260px;
 }
 
 .team-name{
@@ -302,11 +316,17 @@ padding: 6px 25px;
 border: 1px solid #EEE;
 background-color: #FFF;
 padding-bottom: 20px;
+flex-basis: calc((100% - 60px) / 3);
 }
 
 .product-box{
     margin-top: 20px;
     padding-left: 24px;
+}
+
+.product-img{
+    height="294"
+    width="370"
 }
 
 .product-title{
