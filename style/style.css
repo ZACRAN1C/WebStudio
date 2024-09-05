@@ -135,6 +135,50 @@ padding: 10px 32px;
     flex-basis: calc((100% - 90px) / 4);
 }
 
+.advantages-point:first-child:before{
+    content: "";
+    display: block;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    width: 270px;
+    height: 120px;
+    background-image: url(../images/radio.png);
+    margin-bottom: 30px;
+}
+
+.advantages-point:nth-child(2):before{
+    content: "";
+    display: block;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    width: 270px;
+    height: 120px;
+    background-image: url(../images/clock.png);
+    margin-bottom: 30px;
+}
+
+.advantages-point:nth-child(3):before{
+    content: "";
+    display: block;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    width: 270px;
+    height: 120px;
+    background-image: url(../images/monitor.png);
+    margin-bottom: 30px;
+}
+
+.advantages-point:last-child:before{
+    content: "";
+    display: block;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    width: 270px;
+    height: 120px;
+    background-image: url(../images/astronaut.png);
+    margin-bottom: 30px;
+}
+
 .advantages-title{
     color: var(--title-color);
     letter-spacing: 0.42px;
