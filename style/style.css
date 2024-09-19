@@ -85,6 +85,7 @@ font-weight: 500;
 
 .hero{
 background-color: #2F303A;
+background-image: url(../images/backhero.jpg);
 }
 
 .hero-box{
@@ -142,7 +143,7 @@ padding: 10px 32px;
     background-color: #F5F4FA;
     width: 270px;
     height: 120px;
-    background-image: url(../images/radio.png);
+    background-image: url(../images/radio.jpg);
     margin-bottom: 30px;
 }
 
@@ -153,7 +154,7 @@ padding: 10px 32px;
     background-color: #F5F4FA;
     width: 270px;
     height: 120px;
-    background-image: url(../images/clock.png);
+    background-image: url(../images/clock.jpg);
     margin-bottom: 30px;
 }
 
@@ -164,7 +165,7 @@ padding: 10px 32px;
     background-color: #F5F4FA;
     width: 270px;
     height: 120px;
-    background-image: url(../images/monitor.png);
+    background-image: url(../images/monitor.jpg);
     margin-bottom: 30px;
 }
 
@@ -175,7 +176,7 @@ padding: 10px 32px;
     background-color: #F5F4FA;
     width: 270px;
     height: 120px;
-    background-image: url(../images/astronaut.png);
+    background-image: url(../images/astronaut.jpg);
     margin-bottom: 30px;
 }
 
