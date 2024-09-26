@@ -17,7 +17,7 @@ body{
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-    outline: solid red;
+    /* outline: solid red; */
 }
 
 
@@ -75,6 +75,10 @@ font-weight: 500;
 color: var(--active-color);
 }
 
+.header-tel:hover{
+    color: var(--active-color);
+    }
+
 .header-tel{
 color: var(--text-color);
 font-weight: 500;
@@ -85,7 +89,9 @@ font-weight: 500;
 
 .hero{
 background-color: #2F303A;
-background-image: url(../images/backhero.jpg);
+background-image:
+linear-gradient(to bottom, rgba(47, 48, 58, 0.40) 100%, red 0%),
+url(../images/backhero.jpg);
 }
 
 .hero-box{
@@ -236,10 +242,13 @@ margin-bottom: 50px;
 }
 
 .team-point{
+max-width: 270px;
+max-height: 368px;
 border-radius: 0px 0px 4px 4px;
 background-color: #FFF;
 padding-bottom: 30px;
 flex-basis: calc((100% - 90px) / 4);
+box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 }
 
 .team-img{
@@ -338,12 +347,10 @@ background-color: #F5F4FA;
 padding: 6px 25px;
 }
 
-.filter-bt:active{
+.filter-bt:hover{
     border-radius: 4px;
     background-color: #2196F3;
     color: #FFF;
-    
-    /* shadow-middle */
     box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -357,7 +364,13 @@ padding: 6px 25px;
     gap: 30px;
 }
 
+.product-point:hover{
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
 .product-point{
+max-width: 370px;
+max-height: 404px;
 border: 1px solid #EEE;
 background-color: #FFF;
 padding-bottom: 20px;
