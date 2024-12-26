@@ -67,6 +67,7 @@ color: var(--active-color);
 
 .header-email{
 color: var(--text-color);
+fill: var(--text-color);
 font-weight: 500;
 display: flex;
 align-items: center;
@@ -90,6 +91,7 @@ fill: var(--active-color);
 
 .header-tel{
 color: var(--text-color);
+fill: var(--text-color);
 font-weight: 500;
 margin-left: 30px;
 display: flex;
@@ -261,7 +263,7 @@ margin-bottom: 50px;
 
 .team-point{
 max-width: 270px;
-max-height: 368px;
+max-height: 428px;
 border-radius: 0px 0px 4px 4px;
 background-color: #FFF;
 padding-bottom: 30px;
@@ -292,12 +294,69 @@ font-weight: 400;
 letter-spacing: 0.48px;
 }
 
+.team-icons{
+    display: flex;
+    gap: 34px;
+    justify-content: center;
+    margin-top: 28px;
+    padding-bottom: 42px;
+}
+
+.social-icon{
+    fill: #AFB1B8;
+    width: 20px;
+height: 20px;
+}
+
+.social-icon:hover{
+    fill: var(--active-color);
+}
+
+.client-title{
+    color: #212121;
+text-align: center;
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.08px;
+margin: 0 auto;
+padding-top: 94px;
+margin-bottom: 50px;
+}
+
+.client-points{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 94px;
+}
+
+.client-icon{
+    fill: var(--text-color);
+    width: 106px;
+height: 60px;
+padding: 16px 32px;
+border-radius: 4px;
+border: 1px solid #AFB1B8;
+}
+
+.client-icon:hover{
+    fill: var(--active-color);
+}
+
+
 /* footer */
 
 .footer{
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer-box{
+    display: flex;
 }
 
 .footer-logo{
@@ -335,6 +394,31 @@ color: rgba(255, 255, 255, 0.60);
 font-weight: 400;
 line-height: 24px; /* 171.429% */
 letter-spacing: 0.42px;
+}
+
+.social{
+    margin-left: 70px;
+}
+
+.footer-title{
+    color: #FFF;
+    font-size: 14px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+margin-bottom: 32px;
+}
+
+.footer-socials{
+    display: flex;
+    gap: 34px;
+}
+
+.footer-icon{
+    width: 20px;
+height: 20px;
+fill: #FFFFFF;
 }
 
 /* 2-page */
