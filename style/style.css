@@ -55,7 +55,7 @@ color: var(--title-color);
 font-weight: 500;
 }
 
-.header-link:active{
+.header-link:hover{
 color: var(--active-color);
 }
 
@@ -63,46 +63,43 @@ color: var(--active-color);
     display: flex;
     margin-left: 344px;
     outline: solid violet;
-    align-items: center;
-}
-
-.icon-email{
-width: 16px;
-height: 12px;
-}
-
-.icon-email:hover{
-    fill: #2196F3;
 }
 
 .header-email{
 color: var(--text-color);
 font-weight: 500;
-margin-left: 10px;
-margin-right: 30px;
+display: flex;
+align-items: center;
 }
 
 .header-email:hover{
 color: var(--active-color);
+fill: var(--active-color);
 }
 
-.icon-tel{
-    width: 10px;
-height: 16px;
-}
-
-.icon-tel:hover{
-    fill: #2196F3;
+.icon-email{
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
 }
 
 .header-tel:hover{
     color: var(--active-color);
-    }
+    fill: #2196F3;
+}
 
 .header-tel{
 color: var(--text-color);
 font-weight: 500;
-margin-left: 10px;
+margin-left: 30px;
+display: flex;
+align-items: center;
+}
+
+.icon-tel{
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
 }
 
 
