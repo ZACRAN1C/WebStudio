@@ -55,7 +55,7 @@ color: var(--title-color);
 font-weight: 500;
 }
 
-.header-link:hover{
+.header-link:hover, .header-link:focus{
 color: var(--active-color);
 }
 
@@ -73,7 +73,7 @@ display: flex;
 align-items: center;
 }
 
-.header-email:hover{
+.header-email:hover, .header-email:focus{
 color: var(--active-color);
 fill: var(--active-color);
 }
@@ -84,7 +84,7 @@ fill: var(--active-color);
     margin-right: 10px;
 }
 
-.header-tel:hover{
+.header-tel:hover, .header-tel:focus{
     color: var(--active-color);
     fill: #2196F3;
 }
@@ -294,12 +294,26 @@ font-weight: 400;
 letter-spacing: 0.48px;
 }
 
+
+.team-link{
+    background-color: transparent;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-link:hover, .team-link:focus{
+    background-color: var(--active-color);
+}
+
 .team-icons{
     display: flex;
-    gap: 34px;
+    gap: 10px;
     justify-content: center;
-    margin-top: 28px;
-    padding-bottom: 42px;
+    margin-top: 16px;
 }
 
 .social-icon{
@@ -308,8 +322,13 @@ letter-spacing: 0.48px;
 height: 20px;
 }
 
-.social-icon:hover{
-    fill: var(--active-color);
+.team-link:hover .social-icon, .team-link:focus .social-icon{
+    fill: #FFFFFF;
+
+}
+
+.client{
+    padding: 94px 0;
 }
 
 .client-title{
@@ -322,7 +341,6 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 1.08px;
 margin: 0 auto;
-padding-top: 94px;
 margin-bottom: 50px;
 }
 
@@ -330,19 +348,28 @@ margin-bottom: 50px;
     display: flex;
     gap: 30px;
     justify-content: center;
-    padding-bottom: 94px;
+}
+
+.client-link{
+    display: flex;
+    padding: 16px 32px;
+border-radius: 4px;
+border: 1px solid #AFB1B8;
+outline: none;
 }
 
 .client-icon{
     fill: var(--text-color);
     width: 106px;
 height: 60px;
-padding: 16px 32px;
-border-radius: 4px;
-border: 1px solid #AFB1B8;
 }
 
-.client-icon:hover{
+.client-link:hover, .client-link:focus{
+    border-radius: 4px;
+    border: 1px solid var(--active-color);
+}
+
+.client-link:hover .client-icon, .client-link:focus .client-icon{
     fill: var(--active-color);
 }
 
@@ -407,12 +434,27 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 0.42px;
 text-transform: uppercase;
-margin-bottom: 32px;
+margin-bottom: 20px;
 }
 
 .footer-socials{
     display: flex;
-    gap: 34px;
+    gap: 10px;
+}
+
+.social-link{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.social-link:hover, .social-link:focus{
+    background-color: var(--active-color);
 }
 
 .footer-icon{
@@ -447,9 +489,10 @@ letter-spacing: 0.48px;
 border-radius: 4px;
 background-color: #F5F4FA;
 padding: 6px 25px;
+outline: none;
 }
 
-.filter-bt:hover{
+.filter-bt:hover, .filter-bt:focus{
     border-radius: 4px;
     background-color: #2196F3;
     color: #FFF;
@@ -471,7 +514,19 @@ padding: 6px 25px;
 }
 
 .product-point{
-max-width: 370px;
+/* max-width: 370px;
+max-height: 404px;
+border: 1px solid #EEE;
+background-color: #FFF;
+padding-bottom: 20px;
+flex-basis: calc((100% - 60px) / 3); */
+}
+
+.product-link{
+    display: flex;
+    
+    outline: none;
+    max-width: 370px;
 max-height: 404px;
 border: 1px solid #EEE;
 background-color: #FFF;
