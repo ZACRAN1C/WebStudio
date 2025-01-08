@@ -240,6 +240,29 @@ margin-bottom: 50px;
 
 .activity-point{
     flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+}
+
+.activity-point:nth-child(1) > .activity-text{
+padding: 27px 107px;
+}
+
+.activity-point:nth-child(2) > .activity-text{
+    padding: 27px 113px;
+}
+
+.activity-point:nth-child(3) > .activity-text{
+    padding: 27px 95px;
+}
+
+.activity-text{
+    position: absolute;
+    color: #FFF;
+    text-align: center;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.80);
+    top: 224px;
 }
 
 .team{
