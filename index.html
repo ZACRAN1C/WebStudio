@@ -64,7 +64,9 @@
         <div class="container">
           <div class="hero-box">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="hero-bt">Замовити послугу</button>
+            <button type="button" class="hero-bt" data-modal-open>
+              Замовити послугу
+            </button>
           </div>
         </div>
       </section>
@@ -410,58 +412,87 @@
             </li>
           </ul>
         </div>
+        <div class="sending">
+          <h2 class="sending-title">Підпишіться на розсилку</h2>
+          <form class="sending-form">
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="E-mail"
+              class="sending-input"
+            />
+            <div>
+              <input
+                class="sending-sub"
+                type="submit"
+                value="Підписатися"
+              />
+              <svg class="sending-icon">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
       <div data-modal class="modal">
-        <button type="button" class="modal-close">
+        <button type="button" class="modal-close" data-modal-close>
           <svg class="close-icon">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
         <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
         <form class="modal-form">
-          <label for="" class="modal-label">Ім'я</label>
+          <label for="name" class="modal-label">Ім'я</label>
           <div class="modal-box">
-            <input type="text" name="" id="" class="modal-input" />
+            <input type="text" name="name" id="name" class="modal-input" />
             <svg class="modal-icon">
               <use href="./images/symbol-defs.svg#icon-person"></use>
             </svg>
           </div>
-          <label for="" class="modal-label">Телефон</label>
+          <label for="tel" class="modal-label">Телефон</label>
           <div class="modal-box">
-            <input type="text" name="" id="" class="modal-input" />
+            <input type="text" name="tel" id="tel" class="modal-input" />
             <svg class="modal-icon">
               <use href="./images/symbol-defs.svg#icon-phone"></use>
             </svg>
           </div>
-          <label for="" class="modal-label">Пошта</label>
+          <label for="mail" class="modal-label">Пошта</label>
           <div class="modal-box">
-            <input type="text" name="" id="" class="modal-input" />
+            <input type="text" name="mail" id="mail" class="modal-input" />
             <svg class="modal-icon">
               <use href="./images/symbol-defs.svg#icon-mail"></use>
             </svg>
           </div>
-          <label for="" class="modal-label">Коментар</label>
+          <label for="com" class="modal-label">Коментар</label>
           <div>
             <input
               type="text"
-              name=""
-              id=""
+              name="com"
+              id="com"
               class="modal-area"
               placeholder="Введіть текст"
             />
           </div>
-          <input type="checkbox" name="" id="" class="modal-check" />
-          <label for="" class="modal-conditions">
+          <input
+            type="checkbox"
+            name="conditions"
+            id="conditions"
+            class="modal-check"
+          />
+          <label for="conditions" class="modal-conditions">
             <span class="modal-sp">Погоджуюся з розсилкою та приймаю</span>
             <a href="" class="modal-link">Умови договору</a>
           </label>
-          <div>
-            <input type="submit" value="Відправити" class="modal-sub"/>
+          <div class="sub-box">
+            <input type="submit" value="Відправити" class="modal-sub" />
           </div>
         </form>
       </div>
     </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

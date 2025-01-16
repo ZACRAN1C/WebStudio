@@ -19,4 +19,10 @@ a{
 button{
     border: none;
     cursor: pointer;
+    background-color: white;
+}
+
+input{
+    outline: none;
+    border: 0;
 }
