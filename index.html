@@ -423,11 +423,7 @@
               class="sending-input"
             />
             <div>
-              <input
-                class="sending-sub"
-                type="submit"
-                value="Підписатися"
-              />
+              <input class="sending-sub" type="submit" value="Підписатися" />
               <svg class="sending-icon">
                 <use href="./images/symbol-defs.svg#icon-send"></use>
               </svg>
@@ -445,54 +441,51 @@
         </button>
         <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
         <form class="modal-form">
-          <label for="name" class="modal-label">Ім'я</label>
-          <div class="modal-box">
+          <label for="name" class="modal-label">
+            <span class="label-sp">Ім'я</span>
             <input type="text" name="name" id="name" class="modal-input" />
             <svg class="modal-icon">
               <use href="./images/symbol-defs.svg#icon-person"></use>
             </svg>
-          </div>
-          <label for="tel" class="modal-label">Телефон</label>
-          <div class="modal-box">
+          </label>
+          <label for="tel" class="modal-label">
+           <span class="label-sp">Телефон</span> 
             <input type="text" name="tel" id="tel" class="modal-input" />
             <svg class="modal-icon">
               <use href="./images/symbol-defs.svg#icon-phone"></use>
             </svg>
-          </div>
-          <label for="mail" class="modal-label">Пошта</label>
-          <div class="modal-box">
+          </label>
+          <label for="mail" class="modal-label">
+         <span class="label-sp">Пошта</span>  
             <input type="text" name="mail" id="mail" class="modal-input" />
             <svg class="modal-icon">
               <use href="./images/symbol-defs.svg#icon-mail"></use>
             </svg>
-          </div>
-          <label for="com" class="modal-label">Коментар</label>
-          <div>
+          </label>
+          <label for="com" class="modal-label">
+           <span class="label-sp">Коментар</span> 
             <input
-              type="text"
-              name="com"
-              id="com"
-              class="modal-area"
-              placeholder="Введіть текст"
-            />
-          </div>
-          <input
+            type="text"
+            name="com"
+            id="com"
+            class="modal-area"
+            placeholder="Введіть текст"
+          />
+          </label>
+          <label for="conditions" class="modal-conditions">
+            <input
             type="checkbox"
             name="conditions"
             id="conditions"
             class="modal-check"
           />
-          <label for="conditions" class="modal-conditions">
             <span class="modal-sp">Погоджуюся з розсилкою та приймаю</span>
             <a href="" class="modal-link">Умови договору</a>
           </label>
-          <div class="sub-box">
-            <input type="submit" value="Відправити" class="modal-sub" />
-          </div>
+          <button type="submit" class="modal-sub">Відправити</button>
         </form>
       </div>
     </div>
-
     <script src="./js/modal.js"></script>
   </body>
 </html>

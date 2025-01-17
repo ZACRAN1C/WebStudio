@@ -644,11 +644,12 @@ letter-spacing: 0.48px;
     bottom: 0;
 }
 
-.modal{ position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 528px;
+.modal{ 
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 528px;
 height: 581px;
 border-radius: 4px;
 background: #FFF;
@@ -685,7 +686,17 @@ letter-spacing: 0.6px;
 margin-bottom: 12px;
 }
 
-.modal-label{
+.modal-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-lable{
+    display: flex;
+    flex-direction: column;
+}
+
+.label-sp{
     color: var(--text-color);
 font-size: 12px;
 font-weight: 400;
@@ -702,33 +713,18 @@ border: 1px solid rgba(33, 33, 33, 0.20);
 padding-left: 42px;
 }
 
-.modal-box{
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.modal-box:hover > .modal-icon{
-fill: #2196F3;
-}
-
-.modal-box:hover > .modal-input{
-    border-radius: 4px;
-border: 1px solid #2196F3;
-}
-
-.modal-box:focus > .modal-icon{
-    fill: #2196F3;
-}
-
-.modal-box:focus > .modal-input{
-    border-radius: 4px;
-border: 1px solid #2196F3;
+.modal-icon{
+width: 18px;
+height: 18px;
+fill: var(--title-color);
+position: absolute;
+top: 15px;
+left: 12px;
 }
 
 .modal-area{
     width: 448px;
 color: rgba(117, 117, 117, 0.50);
-font-family: Roboto;
 font-size: 12px;
 font-weight: 400;
 line-height: normal;
@@ -753,20 +749,14 @@ fill: #212121;
 }
 
 .modal-sp{
-    color: #757575;
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
+    color: var(--text-color);
 font-weight: 400;
 line-height: 24px; /* 171.429% */
 letter-spacing: 0.42px;
 }
 
 .modal-link{
-    color: #2196F3;
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
+    color: var(--active-color);
 font-weight: 400;
 line-height: 24px;
 letter-spacing: 0.42px;
@@ -778,22 +768,14 @@ text-underline-offset: auto;
 text-underline-position: from-font;
 }
 
-.modal-icon{
-    width: 18px;
-height: 18px;
-fill: var(--title-color);
-position: absolute;
-top: 11px;
-left: 12px;
-}
+
+
+
 
 .modal-sub{
     color: #FFF;
 text-align: center;
-font-family: Roboto;
 font-size: 16px;
-font-style: normal;
-font-weight: 700;
 line-height: 30px; /* 187.5% */
 letter-spacing: 0.96px;
 border-radius: 4px;
