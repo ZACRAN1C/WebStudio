@@ -37,7 +37,6 @@ font-size: 26px;
 letter-spacing: 0.78px;
 text-decoration: none;
 margin-right: 93px;
-outline: solid red;
 }
 
 .header-studio{
@@ -47,7 +46,26 @@ outline: solid red;
 .header-points{
     display: flex;
     gap: 50px;
-    outline: solid blue;
+}
+
+.header-point{
+    position: relative;
+}
+
+.header-point::after{
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    border-radius: 2px;
+    background: #2196F3;
+    transition: width 0.3s ease-in-out;
+}
+
+.header-point:hover::after{
+    width: 100%;
 }
 
 .header-link{
