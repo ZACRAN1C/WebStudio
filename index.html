@@ -421,6 +421,7 @@
               id=""
               placeholder="E-mail"
               class="sending-input"
+              required
             />
             <button class="sending-sub" type="submit">Підписатися</button>
             <svg class="sending-icon">
@@ -444,21 +445,21 @@
         <form class="modal-form">
           <label for="name" class="modal-label">
             <span class="label-sp">Ім'я</span>
-            <input type="text" name="name" id="name" class="modal-input" />
+            <input type="text" name="name" id="name" class="modal-input" required/>
             <svg class="modal-icon">
               <use href="./images/symbol-defs.svg#icon-person"></use>
             </svg>
           </label>
           <label for="tel" class="modal-label">
             <span class="label-sp">Телефон</span>
-            <input type="text" name="tel" id="tel" class="modal-input" />
+            <input type="text" name="tel" id="tel" class="modal-input" required/>
             <svg class="modal-icon">
               <use href="./images/symbol-defs.svg#icon-phone"></use>
             </svg>
           </label>
           <label for="mail" class="modal-label">
             <span class="label-sp">Пошта</span>
-            <input type="text" name="mail" id="mail" class="modal-input" />
+            <input type="text" name="mail" id="mail" class="modal-input" required/>
             <svg class="modal-icon">
               <use href="./images/symbol-defs.svg#icon-mail"></use>
             </svg>
@@ -479,6 +480,7 @@
               name="conditions"
               id="conditions"
               class="modal-check"
+              required
             />
             <span class="modal-sp">Погоджуюся з розсилкою та приймаю</span>
             <a href="" class="modal-link">Умови договору</a>

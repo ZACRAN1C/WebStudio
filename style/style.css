@@ -23,6 +23,10 @@ body{
 
 /* header */
 
+.header{
+    border-bottom: #ECECEC solid 1px;
+}
+
 .header-top{
     display: flex;
     padding-top: 24px;
@@ -76,7 +80,6 @@ color: var(--active-color);
 .header-contacts{
     display: flex;
     margin-left: 344px;
-    outline: solid violet;
 }
 
 .header-email{
@@ -704,9 +707,16 @@ padding-top: 40px;
 position: absolute;
 top: 8px;
 left: 490px;
+display: flex;
+justify-content: center;
+outline: none;
 }
 
 .modal-close:hover > .close-icon{
+fill: #2196F3   ;
+}
+
+.modal-close:focus > .close-icon{
 fill: #2196F3   ;
 }
 
@@ -715,6 +725,8 @@ width: 18px;
 height: 18px;
 fill: #000000;
 position: absolute;
+top: 6px;
+left: 6px;
 z-index: 2;
 }
 
@@ -725,8 +737,8 @@ fill: #FFF;
 stroke-width: 1px;
 stroke: rgba(0, 0, 0, 0.10);
 position: absolute;
-top: -5px;
-left: 1px;
+top: 0;
+left: 0;
 z-index: 1;
 }
 
@@ -753,21 +765,19 @@ position: relative;
 }
 
 .modal-label:hover > .modal-icon{
-fill: #2196F3;
+fill: var(--active-color);
 }
 
-.modal-label:focus > .modal-icon{
-fill: #2196F3; 
+.modal-input:focus ~ .modal-icon{
+fill: var(--active-color); 
 }
 
-.modal-label:focus > .modal-input{
-border-radius: 4px;
-border: 1px solid #2196F3;
+.modal-input:focus{
+border: 1px solid var(--active-color);
 }
 
 .modal-label:hover > .modal-input{
-border-radius: 4px;
-border: 1px solid #2196F3;
+border: 1px solid var(--active-color);
 }
 
 .label-sp{
@@ -810,16 +820,24 @@ padding-bottom: 96px;
 }
 
 .modal-area:hover{
-border-radius: 4px;
-border: 1px solid #2196F3; 
+border: 1px solid var(--active-color); 
+}
+
+.modal-area:focus-visible{
+    border: 1px solid var(--active-color);   
+}
+
+.modal-conditions{
+    margin-top: 10px;
+    display: flex;
+    gap: 7px;
+    align-items: center;
 }
 
 .modal-check{
-margin-top: 10px;
-margin-right: 8px;
 width: 16px;
 height: 15px;
-fill: #212121;
+fill: var(--title-color);
 }
 
 .modal-sp{
